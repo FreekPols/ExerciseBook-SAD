@@ -1,14 +1,18 @@
+# See docs at: https://mystmd.org/guide/frontmatter
 version: 1
 project:
-  id: 7204695b-7485-4989-863c-16cf6e4db155
-  title: Template for TU Delft JB2  
+  id: 62889421-1fa2-49f1-87cf-a00627a430d2
+  title: Aircraft Structural Analysis and Design
   # description:
   # keywords: []
-  authors: [Freek Pols]
-  # abstract: Optional
-  date: 2026-03-23 
-  github: https://github.com/TUD-JB-Templates/JB2 # Change this URL to your GitHub repository
+  authors: [Calvin Rans]
+  license:
+    content: CC-BY-4.0
+  
+  date: 2025-11-02
+  github: https://github.com/cdrans/Aircraft_Structural_Analysis
 
+  
 extends:
   - plugins.yml
   - export.yml
@@ -27,4 +31,5 @@ site:
   
   actions:
     - title: report issue
-      url: https://github.com/TUD-JB-Templates/JB2/issues # Change this URL to your GitHub repository
+      url: https://github.com/cdrans/Aircraft_Structural_Analysis/issues # Change this URL to your GitHub repository
+

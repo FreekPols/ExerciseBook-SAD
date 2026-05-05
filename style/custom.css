@@ -144,9 +144,9 @@ display: block;
 
 /* dark mode white inverter */
 .dark img[src$=".svg"]:not(.no-invert) {
-  filter: invert(1) brightness(1);
+  filter: invert(1) hue-rotate(180deg) saturate(0.75) contrast(1.15) brightness(0.88);
+  mix-blend-mode: plus-lighter;
 }
-
 
 #skip-to-frontmatter {
   margin-bottom: 0;
