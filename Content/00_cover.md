@@ -1,5 +1,5 @@
 ---
-title: Aircraft Structural Analysis and Design Textbook
+title: Exercise Book for Aircraft Structural Analysis and Design
 site:
   hide_outline: true
   hide_toc: true
@@ -11,9 +11,9 @@ no-update-date: true
 
 +++ { "kind": "split-image" }
 
-## Aircraft Structural Analysis & Design
+## Exercise Book
 
-An interactive course reader for AE2135-I: Aircraft Structural Analysis and Design
+An interactive exercise book for AE2135-I: Aircraft Structural Analysis and Design
  
 
 Originally created by  
