@@ -1,0 +1,30 @@
+version: 1
+project:
+  id: 7204695b-7485-4989-863c-16cf6e4db155
+  title: Template for TU Delft JB2  
+  # description:
+  # keywords: []
+  authors: [Freek Pols]
+  # abstract: Optional
+  date: 2026-03-23 
+  github: https://github.com/TUD-JB-Templates/JB2 # Change this URL to your GitHub repository
+
+extends:
+  - plugins.yml
+  - export.yml
+  - toc.yml
+
+site:
+  template: book-theme
+  options:
+    favicon: style/favicon.ico
+    style: style/custom.css
+    logo: style/tudelft.png
+    logo_dark: style/tudelft-dark.png
+    folders: false
+  parts:
+    footer: style/footer.md
+  
+  actions:
+    - title: report issue
+      url: https://github.com/TUD-JB-Templates/JB2/issues # Change this URL to your GitHub repository
