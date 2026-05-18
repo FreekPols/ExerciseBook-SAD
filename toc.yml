@@ -10,4 +10,5 @@ project:
     - file: Content/Torsion/00_Main.md
       children:
         - file: Content/Torsion/01_Homework.md
+    - file: Content/Templates.md
 
