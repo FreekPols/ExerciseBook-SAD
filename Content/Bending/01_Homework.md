@@ -10,6 +10,9 @@ You are not limited to the use of a scientific calculator for homewwork problems
 
 ## P16.2 (modified)
 
+````{exercise} Title
+:label: hw_bending_1
+
 A 2000 mm long thin-walled cantilever beam with an unsymmetric cross-section supports two shear loads of 800 N and 400 N through the shear centre at its free end as shown below. Calculate the maximum normal stress due to bending that occurs at the fixed end of the beam and clearly indicate if it is tensile or compressive.
 
 ```{figure} /Content/Bending/Figures/P16-2.svg
@@ -17,6 +20,46 @@ A 2000 mm long thin-walled cantilever beam with an unsymmetric cross-section sup
 :width: 600px
 :align: center
 ```
+````
+
+````{solution} hw_bending_1
+:class: dropdown
+
+::::{tab-set}
+:::{tab-item} Interpret
+In order to determine the maximum bending stress, we need to:
+- Identify the internal loading at the fixed end
+- Identify the location of the maximum bending stress in the cross-section (point furthest from the N.A.)
+
+To accomplish this, we need to establish a centroidal coordinate frame for our analysis and references for locating the centroid and N.A.
+
+```{image} /Content/Bending/Figures/P16-2_I_1.svg
+:alt: Coordinate frame and references needed to solve the problem 
+:width: 500px
+:align: center
+```
+
+:::
+:::{tab-item} Develop
+
+Setup the necessary equations to solve.
+
+:::
+:::{tab-item} Evaluate
+
+Solve the necessary equations
+
+:::
+:::{tab-item} Assess
+
+Check that the answer makes sense
+
+:::
+
+::::
+````
+
+
 
 ```{seealso} Answer
 :class: dropdown
