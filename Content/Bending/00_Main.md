@@ -2,9 +2,6 @@
 kernelspec:
   name: python3
   display_name: Python 3
-
-execute:
-  skip: true
 ---
 
 # Bending Exercises
