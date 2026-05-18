@@ -13,3 +13,7 @@ there = "there"
 phrase = f"{hello}, {there}!"
 print(phrase)
 ```
+
+```{pyodide}
+print("Hello from Pyodide")
+```
