@@ -95,7 +95,7 @@ Consider the thin-walled z-stiffener profile cross-section shown below. Calculat
 $\sigma  = \frac{{{M_x}}}{{{h^3}t}}\left( {0.91x + 0.50y} \right)$
 
 ![normal stress distribution](/Content/Bending/Figures/P16-5_sol.svg)
-
+```
 
 ```{tip} Intermediate Answers
 :class: dropdown
