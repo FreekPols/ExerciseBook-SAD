@@ -11,6 +11,10 @@ project:
   
   date: 2025-10-05
   github: https://github.com/cdrans/ExerciseBook-SAD
+  
+  jupyter:
+    binder:
+      repo: https://github.com/executablebooks/thebe-binder-base
 
   
 extends:
