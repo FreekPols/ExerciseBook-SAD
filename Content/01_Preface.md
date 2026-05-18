@@ -24,13 +24,13 @@ print('Change this codeline so a + b is returned')
 
 ## Cards
 
-```{exercise} Title;
+```{exercise} Title
 Exercise Cards
 
 To indicate the level of difficulty, each exercise is marked with 1, 2, or 3 &#127798; .
 ```
 
-````{solution} ex_ch2_pp
+````{solution} Title
 :class: dropdown
 
 ::::{tab-set}
@@ -59,12 +59,12 @@ Check that the answer makes sense
 ::::
 ````
 
-```{intermezzo} Intermezzos
-Intermezzos contain background information on the topic or on the people that worked on relevant concepts.
+```{note} Note
+to draw attention to
 ```
 
-```{experiment} Experiments
-We include some basic experiments that can be done at home.
+```{warning} Warning
+to give a warning
 ```
 
 ```{example} Examples
