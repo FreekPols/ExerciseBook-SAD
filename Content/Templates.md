@@ -20,7 +20,28 @@ b = 20
 print('Change this codeline so a + b is returned')
 ```
 
-## Cards
+## Exercises
+````{exercise} 
+:label: hw_bending_99
+text
+````
+
+````{solution} hw_bending_99
+:class: dropdown
+::::{tab-set}
+:::{tab-item} Final Answer
+
+text
+
+:::
+:::{tab-item} Intermediate Answers
+
+text
+
+:::
+::::
+````
+
 
 ```{exercise} Title
 :label: ex_opdr_1
@@ -57,6 +78,8 @@ Check that the answer makes sense
 
 ::::
 ````
+
+## Cards
 
 ```{note} Note
 to draw attention to

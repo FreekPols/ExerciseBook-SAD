@@ -1,8 +1,17 @@
 # Homework
 
-These are the recommended homework problems for the topic of Bending.
+These are the recommended homework problems for the topic of Bending. We highly recommentd you follow the IDEA framework for approaching the solution of each problem. Write out your steps in this approach such that you can easily show a colleague and they could check your work. Effective communication of your solution is arguabbly more valaubale then getting the correct answer!
 
-```{warning} Remember
+```{figure} ../Figures/IDEA.svg
+:label: fig_IDEA
+:alt: IDEA framework for solving problems
+:width: 400px
+:align: center
+
+IDEA framework (Interpret, Develop, Evaluate, & Assess), adapted from https://freekpols.github.io/Mechanica/content/classic/language/ 
+```
+
+```{warning} Calculator/Computer Usage
 
 You are not limited to the use of a scientific calculator for homewwork problems. You may use a graphing calculator or computer to aid you in repetitive calculations or plotting functions for visualization.
 
@@ -108,7 +117,7 @@ Consider the thin-walled z-stiffener profile cross-section shown below. Calculat
 ```
 ````
 
-````{solution} hw_bending_99
+````{solution} hw_bending_3
 :class: dropdown
 ::::{tab-set}
 :::{tab-item} Final Answer
@@ -133,7 +142,8 @@ $\sigma  = \frac{{{M_x}}}{{{h^3}t}}\left( {0.91x + 0.50y} \right)$
 ````
 
 ## P16.6 (modified)
-
+````{exercise} 
+:label: hw_bending_4
 Consider the thin-walled z-stiffener cross-section shown below where the angle of the web is defined parametrically by angle $\theta$ with respect to the x-axis. For the given geometry and internal moment of $1.0~kNm$ shown below, calculate the location of the neutral axis ($\beta$) as functions of the web angle $\theta$. Then calculate the normal stresses at points 1, 2, 3 and 4 for angles $\theta = 30^\circ$, $60^\circ$, $90^\circ$, and $120^\circ$.
 
 ```{image} ./Figures/P16-6.svg
@@ -141,11 +151,21 @@ Consider the thin-walled z-stiffener cross-section shown below where the angle o
 :width: 250px
 :align: center
 ```
+````
 
-````{seealso} Answer
+````{solution} hw_bending_4
 :class: dropdown
+::::{tab-set}
+:::{tab-item} Final Answer
 
 $\beta \left( \theta  \right) = {\tan ^{ - 1}}\left[ {\frac{{\frac{2}{3}\sin \theta \cos \theta }}{{\left( {\frac{1}{6} + 2{{\left( {\cos \theta  - \frac{1}{2}} \right)}^2} + \frac{2}{3}{{\cos }^2}\theta } \right)}}} \right]$
+
+```{image} ./Figures/P16-6_sol.png
+:alt: neutral axis location plot
+:width: 500px
+:align: center
+
+```
 
 | $\theta$ [deg]    | $\sigma_1$ [MPa] |$\sigma_2$ [MPa] |$\sigma_3$ [MPa] |$\sigma_4$ [MPa] |
 | -------- | ------- |------- |------- |------- |
@@ -154,16 +174,8 @@ $\beta \left( \theta  \right) = {\tan ^{ - 1}}\left[ {\frac{{\frac{2}{3}\sin \th
 | 90       | -69.4    | -69.4    | 69.4    | 69.4    |
 | 120      | -64.2    | -75.8    | 75.8    | 64.2    |
 
-```{image} ./Figures/P16-6_sol.png
-:alt: neutral axis location plot
-:width: 500px
-:align: center
-
-```
-````
-
-```{tip} Intermediate Answers
-:class: dropdown
+:::
+:::{tab-item} Intermediate Answers
 
 **Centroid Location**: located in the centre of the web, no matter tha angle $\theta$
 
@@ -177,10 +189,14 @@ $I_{xy}\left(\theta\right) = \frac{2}{3}t{a^3}\sin \theta \cos \theta $
 
 **Internal Moments**: Due to direction of the internal moment, $M_x = -1~kNm$ and $M_y = 0$
 
-```
+:::
+::::
+````
+
 
 ## P16.8 (modified)
-
+````{exercise} 
+:label: hw_bending_5
 Consider the thin-walled S-stiffener cross-section with a constant thickness $t$ and an internal moment of $30~Nm$ aligned with the centroidal y-axis shown below. Calculate the angle of the neutral axis, $\beta$, and the maximum normal stress due to bending if $r = 10~mm$ and $t = 0.8~mm$.
 
 ```{image} ./Figures/P16-8.svg
@@ -188,9 +204,12 @@ Consider the thin-walled S-stiffener cross-section with a constant thickness $t$
 :width: 300px
 :align: center
 ```
+````
 
-```{seealso} Answer
+````{solution} hw_bending_5
 :class: dropdown
+::::{tab-set}
+:::{tab-item} Final Answer
 
 $\beta = -67^\circ$
 
@@ -198,10 +217,8 @@ Points furthest from N.A. are points 1 and 3. This can be deduced from accuratel
 
  Thus $\left| {{\sigma _{\max }}} \right| = \left| {{\sigma _1}} \right| = 220.5MPa$
 
-```
-
-```{tip} Intermediate Answers
-:class: dropdown
+:::
+:::{tab-item} Intermediate Answers
 
 **Centroid Location**: located at the point of inflection (point 2) by inspection
 
@@ -216,27 +233,6 @@ $I_{xy} = -4 t r^3 = -3.20 \times 10^3~mm^4$
 **Internal Moments**: Due to direction of the internal moment, $M_x = 0$ and $M_y = -30~Nm$
 
 **Normal Stress**: $\sigma \left( {x,y} \right) = \frac{{{M_y}}}{{{r^3}t}}\left( {0.693x + 0.294y} \right)$
-
-
-```
-
-
-````{exercise} 
-:label: hw_bending_99
-text
-````
-
-````{solution} hw_bending_99
-:class: dropdown
-::::{tab-set}
-:::{tab-item} Final Answer
-
-text
-
-:::
-:::{tab-item} Intermediate Answers
-
-text
 
 :::
 ::::
