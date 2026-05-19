@@ -58,7 +58,7 @@ Here are some conceptual questions to test your understanding of the problem.
 
 Consider the thin-walled cantilever beam of constant thickness t with the cross-section shown below. The beam is subjected to a point force 2P in the negative x-direction at its mid-span and a point force of P in the negative y-direction at its free end. Both forces act at the shear centre (ie: they do not cause any torsion). Calculate the parametric expressions for the bending stresses at points 1 and 2 as a function of z.
 
-```{figure} /Content/Bending/Figures/P16-4.svg
+```{figure} ./Content/Bending/Figures/P16-4.svg
 :alt: Unsymmetric cantilever beam with horizontal load of 2P acting midspan and vertical load of P acting at its end. 
 :width: 600px
 :align: center
