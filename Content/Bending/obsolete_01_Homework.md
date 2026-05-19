@@ -27,26 +27,102 @@ A 2000 mm long thin-walled cantilever beam with an unsymmetric cross-section sup
 :class: dropdown
 
 ::::{tab-set}
-:::{tab-item} Final Answer
+:::{tab-item} Final Answer Check
+
+The maximum normal stress at the fixed end is: $\sigma_{max} = 390~MPa$ (in tension)
+
+:::
+:::{tab-item} Interpret
+In order to determine the maximum bending stress, we need to:
+- Identify the internal loading at the fixed end
+- Identify the location of the maximum bending stress in the cross-section (point furthest from the N.A.)
+
+To accomplish this, we need to establish a centroidal coordinate frame for our analysis and references for locating the centroid and N.A.
+
+```{figure} /Content/Bending/Figures/16-2_I_1.svg
+:alt: Coordinate frame and references needed to solve the problem 
+:width: 80%
+:align: center
+```
+
+:::
+:::{tab-item} Develop
+**Bending Stress Equation**
+Apply the generalized bending stress equation:
+$${\sigma _z} = \frac{{\left( {{M_x}{I_{yy}} - {M_y}{I_{xy}}} \right)y + \left( {{M_y}{I_{xx}} - {M_x}{I_{xy}}} \right)x}}{{{I_{xx}}{I_{yy}} - I_{xy}^2}}$$
+
+All terms are none-zero in this problem, so it does not simplify further here.
+
+**Locate N.A. to identify location of max stress**
+Location of the N.A. is determined by setting the above equation to zero (as N.A. is defined as line where $\sigma_z = 0$). This results in:
+$$\frac{y}{x} =  - \frac{{{M_y}{I_{xx}} - {M_x}{I_{xy}}}}{{{M_x}{I_{yy}} - {M_y}{I_{xy}}}}$$
+
+For our definition of $\theta$, $\frac{y}{x} = tan \theta$, thus:
+$$\theta  = {\tan ^{ - 1}}\left( { - \frac{{{M_y}{I_{xx}} - {M_x}{I_{xy}}}}{{{M_x}{I_{yy}} - {M_y}{I_{xy}}}}} \right)$$
+
+**Locate Centroid**
+As area of the upper and lower flange are the same, using thin-walled approximations we can deduce that $\bar y = 50~mm$, while:
+
+$$\bar x = \sum {\frac{{{A_i} \cdot {{\tilde x}_i}}}{{{A_i}}}} $$
+
+**Internal Moments**
+Each shear force at the free end creates a moment equal to the shear force times the length of the beam. Need to apply the correct sign to these moments for the defined coodinate frame.
+
+**Area Moments of Inertia** 
+Calculate the relevant area moments of inertia:
+$${I_{xx}} = \int\limits_A {{y^2}dA = \sum {\left( {{{\bar I}_{xx}} + A \cdot {y^2}} \right)} } $$
+$${I_{yy}} = \int\limits_A {{x^2}dA = \sum {\left( {{{\bar I}_{yy}} + A \cdot {x^2}} \right)} } $$
+$${I_{xy}} = \int\limits_A {xydA = \sum {\left( {{{\bar I}_{xy}} + A \cdot xy} \right)} } $$
+
+
+
+:::
+:::{tab-item} Evaluate
+
+**Internal Moments**: At the fixed end,  $M_x = -1600~Nm$ and $M_y = 800~Nm$
+
+**Locate Centroid**: $\bar x = 13.3~mm$ and $\bar y = 50~mm$
+
+**Area Moments of Inertia**: $I_{xx} = 567 \times 10^3~mm^4$, $I_{yy} = 149 \times 10^3~mm^4$, $I_{xy} = -80 \times 10^3~mm^4$
+
+**Bending Stress Equation**
+$${\sigma _z} = \left( {4.16\frac{{MPa}}{{mm}}} \right)x - \left( {2.24\frac{{MPa}}{{mm}}} \right)y$$
+
+**Neutral Axis Location**: $\theta = 61.7^\circ$
+
+**Max Stress**: With the N.A. located $61.7^\circ$ from the x-axis, then clearly the right-most point on the lower flange is furthest from the neutral axis. This point has the coordinates $x = 66.7~mm$ and $y = -50~mm$. Subbing these coordinates into the above bending stress equation, we get: $\sigma_{max} = 390~MPa$ (in tension)
+
+:::
+:::{tab-item} Assess
+
+Looking at the loads applied to the end of the beam individually, each shear force would tend to create a tensile stress at the right-most point of the lower flange. Thus the fact that the maximum stress is tensile makes sense. 
+
+:::
+
+::::
+````
+
+
+
+```{seealso} Answer
+:class: dropdown
 
 The maximum normal stress at the fixed end is:
 
 $\sigma_A = 390~MPa$ (in tension)
 
 and occurs at the free edge of the $1.0~mm$ thick flange of the beam cross-section.
+```
 
-:::
-:::{tab-item} Intermediate Answers
+```{tip} Intermediate Answers
+:class: dropdown
+
 **Centroid Location**: $50~mm$ above the lower flange and $13.3~mm$ to the right of the vertical web.
 
 **Area Moments of Inertia**: $I_{xx} = 567 \times 10^3~mm^4$, $I_{yy} = 149 \times 10^3~mm^4$, $I_{xy} = -80 \times 10^3~mm^4$
 
 **Moments at Fixed End**: $M_x = -1600~Nm$, $M_y = 800~Nm$
-
-:::
-
-::::
-````
+```
 
 ### Test your understanding
 
