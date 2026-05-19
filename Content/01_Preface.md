@@ -9,4 +9,29 @@ kernelspec:
 
 # Preface
 
-Place explanitory text here for how this textbook works
+## Testing
+I am trying to figure out how relative paths work as I am having trouble with paths when building my book locally and in github.
+
+*./Figures/test_image.svg*
+
+```{figure} ./Figures/test_image.svg
+:alt: Test image 
+:width: 400px
+:align: center
+```
+
+*/Figures/test_image.svg*
+
+```{figure} /Figures/test_image.svg
+:alt: Test image 
+:width: 400px
+:align: center
+```
+
+*Figures/test_image.svg*
+
+```{figure} Figures/test_image.svg
+:alt: Test image 
+:width: 400px
+:align: center
+```
