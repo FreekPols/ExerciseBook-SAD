@@ -61,6 +61,7 @@ Do the units make sense? Is the magnitude reasonable? Does the result agree with
 Following this approach aligns with the goals of this course to not not merely train students to obtain answers, but to help them develop disciplined engineering thinking: interpreting problems carefully, modelling them thoughtfully, solving them systematically, and assessing results critically.
 
 ### Additional tips for approaching problems
+
 - **Practice solving problems using paper and pen.** While digital tools can make drawing figures and writing equations faster, they can also reduce practice in clearly communicating solutions by hand. Since assessments are typically completed using paper and pen, it is important to regularly practice organizing and presenting your work in this format.
 
 - **Know when to use computational tools.** For homework and self-study, using computers, programming, or programmable calculators is encouraged where appropriate. These tools allow you to focus on understanding modelling and analysis rather than repetitive arithmetic. Examination problems, however, are designed with the limitations of a basic scientific calculator in mind.
@@ -75,12 +76,20 @@ These are the core exercises intended for all students taking the course. They a
 
 The questions are intentionally not simplified to minimize arithmetic or algebraic effort. As a result, they require careful and rigorous solution procedures, including the ability to trace and identify errors within your own analysis. For these exercises, the use of programmable calculators or computers is encouraged to assist with repetitive or complex calculations.
 
-Only final answers are provided. Developing the full solution process independently is considered an essential part of the learning experience.
+```{note} Note
+Only final answers are provided to Homework Exercises. Developing the full solution process independently is considered an essential part of the learning experience. 
+```
 
 ### Design Challenges
 Design challenges are open-ended problems intended to resemble real engineering decision-making more closely.
 
 These exercises typically do not have a single correct answer. Instead, they require you to apply course concepts to justify assumptions, compare alternatives, and support design decisions. The goal is to encourage discussion, critical thinking, and engineering judgement rather than arriving at one “correct” numerical result.
+
+```{important} Design requires justification
+A key aspect of design is making decisions and convincing others (and yourself) that those decisions are reasonable. The models you develop and the analysis that you perform help you make these decision, but they do not give you the answer. 
+
+Think about designing a structural beam that needs to resist a specific bending load without failing. You can change the geometry of the cross-section, you can change the material of the beam. These variables give you an infinite number of possible solutions that could fulfill the design requirements!
+```
 
 ### Sample Exam Questions
 These questions are designed to reflect the style and constraints of examination problems.

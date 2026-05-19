@@ -151,11 +151,29 @@ Consider the thin-walled z-stiffener cross-section shown below where the angle o
 
 $\beta \left( \theta  \right) = {\tan ^{ - 1}}\left[ {\frac{{\frac{2}{3}\sin \theta \cos \theta }}{{\left( {\frac{1}{6} + 2{{\left( {\cos \theta  - \frac{1}{2}} \right)}^2} + \frac{2}{3}{{\cos }^2}\theta } \right)}}} \right]$
 
-```{image} ./Figures/P16-6_sol.png
-:alt: neutral axis location plot
-:width: 500px
-:align: center
+Click run to plot the location of the N.A. as a function of $\theta$
+```{pyodide}
+import matplotlib.pyplot as plt
+import numpy as np
 
+x_deg = np.linspace(0, 180, 500)
+
+x_rad = np.radians(x_deg)
+
+y = np.arctan(
+    ((2/3) * np.sin(x_rad) * np.cos(x_rad)) /
+    ((1/6) + 2*(np.cos(x_rad)-(1/2))**2 + (2/3) * np.cos(x_rad)**2)
+)
+
+y_deg = np.degrees(y)
+
+plt.figure(figsize=(8, 3))
+plt.plot(x_deg, y_deg)
+plt.grid(True)
+
+plt.xlabel('theta (degrees)')
+plt.ylabel('beta (degrees)')
+plt.show()
 ```
 
 | $\theta$ [deg]    | $\sigma_1$ [MPa] |$\sigma_2$ [MPa] |$\sigma_3$ [MPa] |$\sigma_4$ [MPa] |
